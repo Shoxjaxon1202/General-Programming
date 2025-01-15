@@ -1,0 +1,146 @@
+.contact {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.contact_wrapper {
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_icon {
+  font-size: 25px;
+}
+.res_title {
+  width: 40%;
+  margin-bottom: 20px;
+}
+
+.contact_box {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.contact_left {
+  flex: 1;
+  margin-right: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+label span {
+  color: rgb(248, 94, 94);
+}
+
+.form_input {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  text-transform: none;
+  border-radius: 0px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: text;
+  display: block;
+  margin: 0;
+  padding: 8px 10px;
+  width: 100%;
+  outline: 0;
+  transition: all 0.15s ease-in-out;
+  background-color: #fff;
+  color: #020402;
+
+  background-color: #fff;
+  color: #020402;
+  border-color: #6e6b6b;
+
+  margin-bottom: 15px;
+}
+
+.form_input:focus {
+  outline-offset: 2px;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color:  #6e6b6b;
+}
+
+.message_input {
+  height: 100px;
+}
+
+.checkbox_container {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+
+.checkbox_input {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+.contact_hours {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.submit_btn {
+  width: 100%;
+  // background-color: #28a745;
+  // color: #fff;
+  // padding: 10px 15px;
+  // border: none;
+  // border-radius: 4px;
+  // cursor: pointer;
+  // font-size: 16px;
+}
+
+.submit_btn:hover {
+  // background-color: #218838;
+}
+
+.contact_right {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.contact_right h4 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.contact_right p,
+.contact_right a {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.contact_right p {
+  text-decoration: underline;
+  display: flex;
+  gap: 10px;
+}
+
+.hours_list {
+  list-style: none;
+  padding: 0;
+  color: #555;
+}
+
+.hours_list li {
+  margin-bottom: 5px;
+}

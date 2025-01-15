@@ -1,0 +1,220 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  width: 100%;
+
+  &_wrapper {
+    padding: 20px 0;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &_list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &_title {
+    color: #020402;
+    font-size: 1.65rem;
+    font-style: normal;
+    font-family: "Poppins";
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    touch-action: manipulation;
+  }
+
+  &_item {
+    position: relative; // For dropdown positioning
+
+    a {
+      color: #595959;
+      position: relative;
+      font-size: 0.675rem;
+      font-style: normal;
+      font-family: "Poppins";
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0;
+      padding: 6px 0;
+      vertical-align: middle;
+
+      &:hover {
+        position: relative;
+        transition: all 0.15s ease-in-out;
+        text-decoration: none;
+        z-index: 1;
+
+        color: #32aa27;
+        border-bottom: 3px solid #32aa27;
+      }
+
+      border-bottom: 3px solid transparent;
+    }
+
+    &.dropdown {
+      &:hover .dropdown_menu {
+        display: block;
+      }
+
+      .dropdown_menu {
+        display: none;
+        position: absolute;
+        top: calc(100% + 5px); // Ensures the dropdown opens directly below
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Added box shadow
+        border-radius: 4px;
+        min-width: 150px;
+        padding: 10px 0;
+        z-index: 1000;
+
+        a {
+          position: relative;
+          display: block;
+          padding: 10px 20px;
+          font-size: 0.875rem;
+          font-family: "Poppins";
+          font-weight: 500;
+          color: #595959;
+          text-decoration: none;
+          transition: all 0.15s ease-in-out;
+
+          &:hover {
+            background-color: #f7f7f7;
+            color: #32aa27;
+          }
+        }
+      }
+    }
+  }
+
+  &_btn {
+    color: #020402;
+    border-color: #020402;
+    background-color: transparent;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border-width: 2px;
+
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.15s ease-in-out;
+    text-decoration: none;
+    margin: 0;
+    min-height: 50px;
+    padding: 10px 30px;
+    border: 2px solid;
+
+    touch-action: manipulation;
+
+    cursor: pointer;
+
+    margin-left: 15px;
+
+    &:hover {
+      color: #fff;
+      border-color: #32aa27;
+      background-color: #32aa27;
+    }
+
+    &:active{
+   box-shadow: 0 0 0 2px #fff, 0 0 0 4px #41d034;
+   outline-offset: 2px;
+    }
+  }
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &_icon {
+    position: absolute;
+    top: 8px;
+    font-size: 20px;
+  }
+}
+
+.navbar_item {
+  position: relative;
+
+  a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 265px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+
+    a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      background-color: #fff;
+    }
+  }
+
+  &:hover .dropdown {
+    display: block;
+  }
+
+  &:not(:hover) .dropdown {
+    display: none;
+  }
+}
+
+.menu1,
+.menu2 {
+  border-bottom: none !important;
+  text-decoration: none !important;
+  width: 100%;
+
+  &:hover {
+    position: relative;
+    transition: all 0.15s ease-in-out;
+    text-decoration: none;
+    z-index: 1;
+
+    color: #32aa27 !important;
+    border-bottom: 3px solid #32aa27;
+  }
+}

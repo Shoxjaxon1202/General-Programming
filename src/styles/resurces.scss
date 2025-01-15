@@ -1,0 +1,230 @@
+.res {
+  width: 100%;
+
+  &_wrapper {
+    margin: 100px auto;
+  }
+
+  &_subtitle {
+    color: #32aa27;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &_title {
+    color: #020402;
+    font-size: 2rem;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0px;
+    text-transform: none;
+    margin-bottom: 10px;
+    max-width: 40em;
+
+    width: 70% !important;
+    margin-bottom: 70px;
+  }
+
+  &_cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &_card {
+    width: 50%;
+
+    &_title {
+      color: #020402;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-family: Poppins;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: 0px;
+      text-transform: none;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  }
+  &_img {
+    cursor: pointer;
+    width: 100%;
+    transition: filter 0.1s ease;
+
+    &:hover {
+      filter: blur(1px) brightness(1.1); /* Xiralash va yorqinlashtirish */
+    }
+  }
+
+  &_description {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    text-transform: none;
+    margin-bottom: 20px !important;
+
+    color: #595959;
+  }
+  &_navigate a {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #595959;
+    border-bottom: 2.5px solid #595959;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+   &_modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9); /* Boshlang'ich holat */
+    opacity: 0; /* Boshlang'ich holat */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out; /* Animatsiya */
+    &.open {
+      transform: translate(-50%, -50%) scale(1); /* Ochilgan holat */
+      opacity: 1; /* Ochilgan holat */
+    }
+  }
+
+  &_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #595959;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+    &.open {
+      opacity: 1;
+    }
+  }
+
+  &_modal_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #595959;
+    background-color: transparent;
+    padding: 0px 10px;
+    
+    &:hover {
+      color: red;
+      background: #f2f2f2;
+    }
+  }
+  &_modal{
+    height: 100%;
+    max-height: 600px;
+    min-height: 600px;
+    &_header{
+      margin-top: 20px;
+      font-size: 1.25rem;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #595959;
+    margin-bottom: 20px;
+    }
+
+    &_body{
+      font-size: 1.125rem;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #595959;
+    margin-top: 20px;
+    margin-bottom: 0;
+    }
+    &_box{
+    height: 100%;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    &_left{
+      width: 50%;
+    }
+    &_hr{
+      width: 0.1px;
+      height: 100% !important;
+      background-color: #595959 !important;
+      color: #595959; /* Chiziqning rangi */
+      border: none; /* Chiziq chegarasini olib tashlash */
+      display: inline-block; /* Inline elementga aylantirish */
+    }
+    &_right{
+      width: 50%;
+    }
+  }
+
+
+  &_modal_img{
+    cursor: pointer;
+    width: 100%;
+    transition: filter 0.1s ease;
+
+    &:hover {
+      filter: blur(1px) brightness(1.1); /* Xiralash va yorqinlashtirish */
+    }
+  }
+}
+
+
+.res_modal {
+  z-index: 10000 !important; /* Modal barcha narsadan ustun */
+}
+
+.res_overlay {
+  z-index: 9999 !important; /* Overlay modalning tagida, lekin barcha narsadan ustun */
+}

@@ -1,0 +1,20 @@
+.servicesItem{
+    width: 100%;
+    &_wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        margin: 100px auto;
+    }
+    &_left{
+        width: 40%;
+    }
+    &_right{
+        width: 60%;
+    }
+    &_img{
+        width: 90%;
+        height: auto;
+    }
+}
